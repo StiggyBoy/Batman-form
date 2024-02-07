@@ -1,0 +1,237 @@
+** start of undefined **
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="before">
+    <div class="container">
+    <header>
+      <h1 id="title">Survey Form: Be the next Batman</h1>
+      <p id="description" class="information">Fill the form if you wish to become the next batman</p>
+      </header>
+      <form id="survey-form">
+
+        <div class="form-group">
+        <label id="name-label" for="name" class="information">Name</label>
+        <input id="name" placeholder="Write your name" type="text" required>
+        </input>
+        </div>
+
+        <div class="form-group">
+        <label for="email" id="email-label" class="information">
+          Email</label>
+        <input id="email" 
+        placeholder="Write your email"
+        type="email"  
+        required>
+        </input>
+        </div>
+
+        <div class="form-group">
+        <label for="number"     id="number-label" class="information">
+          Age
+        </label><input id="number"
+         type="number" min="5" max="120" required  
+         placeholder="Age">
+        </input>
+        </div>
+
+        <div class="form-group">
+        <p>Which role describes you best?</p>
+        <select id="dropdown" name="role">
+        <option disabled selected value>Select curent role</option>
+        <option value="batman">I'm BATMAN</option>
+        <option value="job">Engineer</option>
+        <option value="student">Student</option>     
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>Do you like BATMAN?</p>
+        <label>
+        <input type="radio" name="opinion" value="yes" checked class="input-radio"></input>
+        YES I LOVE HIM
+        </label>
+        </div>
+
+        <div class="form-group">
+        <label>
+        <input type="radio" name="opinion" value="no" class="input-radio"></input>
+        Nuhuhh
+        </label>
+        </div>
+
+        <div class="form-group">
+        <label>
+        <input type="radio" name="opinion" value="idk" class="input-radio"></input>
+        Who dis batman
+        </label>
+        </div>
+
+        <div class="form-group">
+          <p>Choose your favorite batman movie/movies (mutliple choice)</p>
+          <label>
+            <input type="checkbox" value="batman-1966" class="input-radio">Batman: The Movie (1966)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-1989" class="input-radio">Batman (1989)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-1992" class="input-radio">Batman Returns (1992)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-1995" class="input-radio">Batman Forever (1995)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-robin-1997" class="input-radio">Batman & Robin (1997)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2005" class="input-radio">Batman Begins (2005)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2008" class="input-radio">The Dark Knight (2008)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2012" class="input-radio">The Dark Knight Rises (2012)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2014" class="input-radio">Son of Batman (2014)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-robin-2015" class="input-radio">Batman vs. Robin (2015)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2016" class="input-radio">Batman: Bad Blood (2016)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-lego-2017" class="input-radio">The Lego Batman Movie (2017)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2019" class="input-radio">Batman: Hush (2019)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-superman-2016" class="input-radio">Batman v. Superman: Dawn of Justice (2016)
+          </label>
+
+          <label>
+          <input type="checkbox" value="batman-2022" class="input-radio">The Batman (2022)
+          </label>
+        </div>
+        
+        <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="comment" class="input-textarea" placeholder="Comment here...">
+        </textarea>
+        </div>
+
+        <div class="form-group">
+        <button id="submit" class="submit-button" type="submit">Submit</button>
+        </div>
+      </form>
+      </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+.before{
+top: 0;
+left: 0;
+background-image: linear-gradient( 115deg, rgba(0,0,0,0.8),rgba(0,1,0,0.7) ), 
+url(https://wallpapersmug.com/download/2048x1152/065445/art-batman-dark-knight.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.information{
+  color: #DBA800;
+}
+body{
+  margin: 20%;
+  display: block;
+  font-size: 20;
+  color: 
+}
+.container{
+  margin: 3.125rem auto 0 auto;
+}
+.information,h1{
+  text-align: center;
+}
+h1{color: #DBA800;}
+form{
+  background: rgba(90, 90, 90, 0.8);
+  padding: 2.5rem;
+  border-radius: 0.35rem;
+}
+
+select, button, input, textarea{
+  margin: 0;
+  font-family: inherit;
+  font-size: 20;
+  line-height: inherit;
+}
+textarea{
+  width: 100%;
+  height: 100px;
+  padding: 10px
+}
+label{
+  align-items: center;
+  display: flex;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+p{
+  font-size: 25;
+  color: #DBA800;
+}
+
+input{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%
+}
+.input-radio{
+  width: 20
+}
+  
+select{
+  width: 100%
+}
+
+
+button{
+text-align: center;
+width: 100%;
+height: 40px;
+margin-top: 35px;
+font-size: 25;
+border-radius: 5px;
+border-color: yellow;
+background-color: yellow;
+color: black;
+}
+
+** end of undefined **
+
